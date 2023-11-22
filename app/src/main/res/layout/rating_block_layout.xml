@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:background="@drawable/rating_block_background_style"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/star_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_filled_star_24"
+        android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/rating_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="5"
+        android:textColor="@color/yellow_800"
+        android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/rating_as_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Превосходно"
+        android:textColor="@color/yellow_800"
+        android:padding="2dp"/>
+</LinearLayout>

@@ -2,12 +2,12 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/container"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/default_navigate_button"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="@dimen/default_button_height_48dp"
+        tools:text="Go to next screen"
+        style="@style/default_button_style"/>
 
 </FrameLayout>

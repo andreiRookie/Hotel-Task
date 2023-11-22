@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/facilities_shape">
+
+    <include
+        android:id="@+id/facilities_line"
+        layout="@layout/facilities_line_layout"/>
+
+    <include
+        layout="@layout/delimiter_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/included_line"
+        layout="@layout/facilities_line_layout"/>
+
+    <include
+        layout="@layout/delimiter_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/excluded_line"
+        layout="@layout/facilities_line_layout"/>
+
+</LinearLayout>

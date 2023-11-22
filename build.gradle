@@ -1,5 +1,33 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.vers = [
+            'fragments': '1.5.7',
+            'lifecycle': '2.6.0',
+            'dagger'   : '2.48',
+            'okhttp': '4.10.0',
+            'retrofit': '2.9.0',
+            'moshi': '1.14.0',
+            'glide': '4.12.0',
+    ]
+    ext.deps = [
+            'fragment'       : "androidx.fragment:fragment-ktx:${vers.fragments}",
+            'viewmodel'      : "androidx.lifecycle:lifecycle-viewmodel-ktx:${vers.lifecycle}",
+            'dagger'         : "com.google.dagger:dagger:${vers.dagger}",
+            'dagger_compiler': "com.google.dagger:dagger-compiler:${vers.dagger}",
+
+            'okhhtp': "com.squareup.okhttp3:okhttp:${vers.okhttp}",
+            'okhhtp_logging_intercepter': "com.squareup.okhttp3:logging-interceptor:${vers.okhttp}",
+
+            'retrofit': "com.squareup.retrofit2:retrofit:${vers.retrofit}",
+            'retrofit_moshi_converter': "com.squareup.retrofit2:converter-moshi:${vers.retrofit}",
+
+            'moshi': "com.squareup.moshi:moshi-kotlin-codegen:${vers.moshi}",
+
+            'glide': "com.github.bumptech.glide:glide:${vers.glide}",
+    ]
+}
 plugins {
-id 'com.android.application' version '8.1.1' apply false
+    id 'com.android.application' version '8.1.1' apply false
     id 'org.jetbrains.kotlin.android' version '1.9.0' apply false
+    id 'com.android.library' version '8.1.1' apply false
 }

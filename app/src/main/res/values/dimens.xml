@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_button_height_48dp">48dp</dimen>
+    <dimen name="screen_title_height_48dp">48dp</dimen>
+    <dimen name="hotel_photo_radius_16dp">16dp</dimen>
+    <dimen name="default_button_radius_8dp">8dp</dimen>
+</resources>
